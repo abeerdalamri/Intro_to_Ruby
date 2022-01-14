@@ -7,6 +7,7 @@ puts "----A----"
 string.slice! "Hello "
 puts string 
 
+
 # B
 puts "----B----"
 string.insert(0 , "Welcome to ")
