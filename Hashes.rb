@@ -23,6 +23,8 @@ Employees = {
     14=>{name:"Said",salary:nil},
 }
 
+#A
+
 #1
 puts "Names: #{Employees.map{|key, val| val[:name]}}"
 
@@ -57,6 +59,12 @@ puts "Employees without nil salary: #{emp_without_nil}"
 puts " "
 uniq = Employees.uniq
 puts "uniq employees: #{uniq}"
+
+#B
+arr = [10, 20, 30, 40, 10, 10, 20]
+arr2 = arr.map{|el| [el, arr.count(el)]}
+arr2 = arr2.uniq
+puts arr2.to_h
 
 
 
