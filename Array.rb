@@ -33,6 +33,10 @@ end
 
 #H
 arr5 = [1,5,7,8,9,10,17,33,22]
+#Check if array empty
+if (arr5.empty?)
+    puts 0
+end
 newarr = arr5.select{|el| el < 17  }
 puts "Sum of array exept 17 and more: #{newarr.reduce(0){|sum, el| sum+el }}"
 
